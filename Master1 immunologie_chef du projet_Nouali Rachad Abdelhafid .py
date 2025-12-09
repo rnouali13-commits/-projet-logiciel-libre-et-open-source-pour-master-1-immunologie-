@@ -1,4 +1,6 @@
-#Salem c'est Mme Dib et Mr Ameur...c'est bien continuer
+#Salem c'est Mme Dib et Mr Ameur...c'est bien continue
+#Pour que les membres puissent modifier il doivent appyer sur le stylo vert à droite et
+#quand ils finissent ils doivent enregistrer sur commit changes pour enregistrer
 
 #le chef de groupe: Nouali Rachad Abdelhafid /master1 immunologie/la date:06/12/2025
 #REGUIEG ISSAAD Chaimaa 
@@ -41,6 +43,7 @@ print(tableau)
 print("5/***l'ajoute d'une nouvelle colonne de catégorie GC***")
 tableau["catégorie GC"]=tableau["pourcentage GC"].apply(lambda x:"Riche" if x > 55 else("Moyen" if 45<= x <= 55 else "Faible" ))
 print(tableau,"\n")
+
 
 
 
