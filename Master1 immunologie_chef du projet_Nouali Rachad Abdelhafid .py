@@ -24,6 +24,7 @@ print("Tableau des séquences ADN :" )
 print(tableau, "\n")
 import pandas as pd
 
+# la deuxième question: Affichager la colonne de longueur sur un tableau
 print(" **************2/ tableau de longueur************** ")
 
 # Création du DataFrame
@@ -55,6 +56,7 @@ print(Séquence , "\n")
 print("5/***l'ajoute d'une nouvelle colonne de catégorie GC***")
 tableau["catégorie GC"]=tableau["pourcentage GC"].apply(lambda x:"Riche" if x > 55 else("Moyen" if 45<= x <= 55 else "Faible" ))
 print(tableau,"\n")
+
 
 
 
