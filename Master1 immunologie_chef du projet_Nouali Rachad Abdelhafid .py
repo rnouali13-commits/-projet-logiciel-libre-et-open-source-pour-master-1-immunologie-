@@ -21,7 +21,18 @@ print(" ***************création et affichage***************")
 
 # Affichage du tableau 
 print("Tableau des séquences ADN :" )
-print(tableau)
+print(tableau, "\n")
+import pandas as pd
+
+print(" **************2/ tableau de longueur************** ")
+
+# Création du DataFrame
+df = pd.DataFrame(tableau)  
+
+
+# Affichage de la colonne de longueur
+Séquence = tableau ["longueur"]
+print(Séquence , "\n")
 
 
 
@@ -44,6 +55,7 @@ print(tableau)
 print("5/***l'ajoute d'une nouvelle colonne de catégorie GC***")
 tableau["catégorie GC"]=tableau["pourcentage GC"].apply(lambda x:"Riche" if x > 55 else("Moyen" if 45<= x <= 55 else "Faible" ))
 print(tableau,"\n")
+
 
 
 
