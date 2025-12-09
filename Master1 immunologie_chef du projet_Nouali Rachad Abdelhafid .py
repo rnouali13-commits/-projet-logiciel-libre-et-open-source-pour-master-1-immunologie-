@@ -54,8 +54,11 @@ print(Séquence , "\n")
 
 #la cinquième question: Ajouter une colonne de “Catégorie GC”
 print("5/***l'ajoute d'une nouvelle colonne de catégorie GC***")
+# Création du DataFrame
+df = pd.DataFrame(tableau)  
 tableau["catégorie GC"]=tableau["pourcentage GC"].apply(lambda x:"Riche" if x > 55 else("Moyen" if 45<= x <= 55 else "Faible" ))
 print(tableau,"\n")
+
 
 
 
