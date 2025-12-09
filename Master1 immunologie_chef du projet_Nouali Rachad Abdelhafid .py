@@ -14,7 +14,7 @@ data = {
     "longueur":[12,12,12,10,11,10,10],
     "pourcentage GC":[50,66.67,58.33,40,45.45,60,50],
 }
-
+# la première question:  Création  et afficher le tableau des séquence et longueur et pourcentage d'ADN
 #Creation d'un dataFram (Tableau pandas)
 tableau= pd.DataFrame(data)
 print(" ***************création et affichage***************")
@@ -44,6 +44,7 @@ print(tableau)
 print("5/***l'ajoute d'une nouvelle colonne de catégorie GC***")
 tableau["catégorie GC"]=tableau["pourcentage GC"].apply(lambda x:"Riche" if x > 55 else("Moyen" if 45<= x <= 55 else "Faible" ))
 print(tableau,"\n")
+
 
 
 
