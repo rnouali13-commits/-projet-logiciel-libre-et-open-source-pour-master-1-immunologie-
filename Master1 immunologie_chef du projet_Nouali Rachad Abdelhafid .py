@@ -88,6 +88,10 @@ Average_gc = tableau["pourcentage GC"].std()
 
 print(f"l'ecart type de GC:{average_gc:.3f}%")
 
+# la huitiéme question : Sauvegarder le tableau final dans un fichier CSV 
+# Afficher le résultat 
+
+
 
 
 
