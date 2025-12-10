@@ -88,7 +88,7 @@ print(tableau,"\n")
 
 
 # la septième question: Calculer l'écart-type du %GC et de la longueur des séquences
-
+print("7/*l'écart-type et la langueur des séquences*") 
 Average_gc = tableau["pourcentage GC"].std()
 # Afficher le resultat
 
@@ -97,6 +97,7 @@ print(f"l'ecart type de GC:{average_gc:.3f}%")
 
 # la huitiéme question : Sauvegarder le tableau final dans un fichier CSV 
 # Afficher le résultat 
+
 
 
 
