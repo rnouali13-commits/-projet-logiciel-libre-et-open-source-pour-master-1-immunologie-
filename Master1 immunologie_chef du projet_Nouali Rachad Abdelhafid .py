@@ -41,6 +41,7 @@ print(Séquence , "\n")
 tableau= pd.DataFrame(data) 
 print("**************3\Filtrage avec longueur**************")
 filtered_tableau = tableau[tableau["longueur"]<10 ]   
+#Afficher le résultat 
 print(filtered_tableau,"\n")
 
 
@@ -81,6 +82,7 @@ print(tableau,"\n")
 # la septième question: Calculer l'écart-type du %GC et de la longueur des séquences
 Average_gc = tableau["pourcentage GC"].std()
 print(tableau,"\n")
+
 
 
 
