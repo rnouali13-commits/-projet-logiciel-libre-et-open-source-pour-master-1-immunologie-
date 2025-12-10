@@ -57,7 +57,9 @@ print("5/***l'ajoute d'une nouvelle colonne de catégorie GC***")
 # Création du DataFrame
 df = pd.DataFrame(tableau)  
 tableau["catégorie GC"]=tableau["pourcentage GC"].apply(lambda x:"Riche" if x > 55 else("Moyen" if 45<= x <= 55 else "Faible" ))
+#afficher le résultat
 print(tableau,"\n")
+
 
 
 
