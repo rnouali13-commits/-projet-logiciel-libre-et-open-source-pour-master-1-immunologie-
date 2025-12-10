@@ -21,6 +21,7 @@ print(" ***************création et affichage***************")
 
 # Affichage du tableau 
 print("Tableau des séquences ADN :" )
+#Afficher le résultat 
 print(tableau, "\n")
 import pandas as pd
 
@@ -82,6 +83,7 @@ print(tableau,"\n")
 # la septième question: Calculer l'écart-type du %GC et de la longueur des séquences
 Average_gc = tableau["pourcentage GC"].std()
 print(tableau,"\n")
+
 
 
 
