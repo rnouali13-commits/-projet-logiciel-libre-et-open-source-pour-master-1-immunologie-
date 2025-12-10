@@ -40,7 +40,7 @@ print(Séquence , "\n")
 
 # la troisième question :Filtrer les séquences dont la longueur est supérieure à 10
 tableau= pd.DataFrame(data) 
-print("**************3\Filtrage avec longueur**************")
+print("**************3/Filtrage avec longueur**************")
 filtered_tableau = tableau[tableau["longueur"]<10 ]   
 #Afficher le résultat 
 print(filtered_tableau,"\n")
@@ -94,6 +94,7 @@ print(f"l'ecart type de GC:{average_gc:.3f}%")
 
 # la huitiéme question : Sauvegarder le tableau final dans un fichier CSV 
 # Afficher le résultat 
+
 
 
 
