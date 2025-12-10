@@ -3,7 +3,7 @@
 #quand ils finissent ils doivent enregistrer sur commit changes pour enregistrer
 
 #le chef de groupe: Nouali Rachad Abdelhafid /master1 immunologie/la date:06/12/2025
-#REGUIEG ISSAAD Chaimaa 
+#REGUIEG ISSAAD CHAIMAA
 #BERRANI AMINA 
 #METAIR CHAIMAA
 #NEGADI AMEL NASSIMA
@@ -34,6 +34,19 @@ df = pd.DataFrame(tableau)
 # Affichager uniquement la colonne de longueur sur un tableau
 Séquence = tableau ["longueur"]
 print(Séquence , "\n")
+
+
+
+#3)Filtrer les séquences dont la longueur est supérieure à 10
+tableau= pd.DataFrame(data) 
+print("**************3\Filtrage avec longueur**************")
+filtered_tableau = tableau[tableau["longueur"]<10 ]   
+print(filtered_tableau,"\n")
+
+
+      
+     
+
 
 
 
@@ -68,6 +81,7 @@ print(tableau,"\n")
 # la septième question: Calculer l'écart-type du %GC et de la longueur des séquences
 Average_gc = tableau["pourcentage GC"].std()
 print(tableau,"\n")
+
 
 
 
