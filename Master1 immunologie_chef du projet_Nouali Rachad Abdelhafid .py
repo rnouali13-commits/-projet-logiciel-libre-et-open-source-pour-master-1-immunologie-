@@ -98,6 +98,11 @@ print(f"l'ecart type de GC:{average_gc:.3f}%")
 # la huitiéme question : Sauvegarder le tableau final dans un fichier CSV 
 # Afficher le résultat 
 
+print("************* 8/Sauvegarde du tableau *************\n")
+tableau.to_csv("tableau_final.csv", index=False)
+
+
+
 
 
 
