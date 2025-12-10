@@ -37,7 +37,7 @@ print(Séquence , "\n")
 
 
 
-#3)Filtrer les séquences dont la longueur est supérieure à 10
+# la troisième question :Filtrer les séquences dont la longueur est supérieure à 10
 tableau= pd.DataFrame(data) 
 print("**************3\Filtrage avec longueur**************")
 filtered_tableau = tableau[tableau["longueur"]<10 ]   
@@ -81,6 +81,7 @@ print(tableau,"\n")
 # la septième question: Calculer l'écart-type du %GC et de la longueur des séquences
 Average_gc = tableau["pourcentage GC"].std()
 print(tableau,"\n")
+
 
 
 
