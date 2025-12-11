@@ -27,20 +27,15 @@ import pandas as pd
 
 # la deuxième question: Affichager la colonne de longueur sur un tableau
 print(" **************2/ tableau de longueur************** ")
-
 # Création du DataFrame
 df = pd.DataFrame(tableau)  
-
-
 # Affichager uniquement la colonne de longueur sur un tableau
 Séquence = tableau ["longueur"]
 print(Séquence , "\n")
 
-
-
 # la troisième question :Filtrer les séquences dont la longueur est supérieure à 10
 tableau= pd.DataFrame(data) 
-print("**************3/Filtrage avec longueur**************")
+print("**************3/Filtrage les séquences dont la longueur est supérieure à 10 **************")
 filtered_tableau = tableau[tableau["longueur"]<10 ]   
 #Afficher le résultat 
 print(filtered_tableau,"\n")
@@ -49,29 +44,10 @@ print(filtered_tableau,"\n")
 # la Quatrième question : Calculer la moyenne de pourcentage de GC avec 3 chiffres après la virgule 
 print("************* 4/Calcul de la moyen *************","\n")
 average_gc = tableau ["pourcentage GC"].mean ()
-print(f"Pourcentage moyen de GC avec 3 chiffres après la virgule :{average_gc:.3f}%")
+print(f"Pourcentage moyen de GC avec 3 chiffres après la virgule :{average_gc:.3f}%","\n")
      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #la cinquième question: Ajouter une colonne de “Catégorie GC”
-print("5/***l'ajoute d'une nouvelle colonne de catégorie GC***")
+print("5/***l'ajout d'une nouvelle colonne de catégorie GC***")
 # Création du DataFrame
 df = pd.DataFrame(tableau)  
 tableau["catégorie GC"]=tableau["pourcentage GC"].apply(lambda x:"Riche" if x > 55 else("Moyen" if 45<= x <= 55 else "Faible" ))
@@ -83,23 +59,20 @@ tableau = pd.DataFrame(data)
 tableau["Nombre de G"] = tableau ["Séquence"].str.count("G")
 print(tableau,"\n") 
 
-
-
-
-
 # la septième question: Calculer l'écart-type du %GC et de la longueur des séquences
 print("7/*l'écart-type et la langueur des séquences*") 
 Average_gc = tableau["pourcentage GC"].std()
 # Afficher le resultat
 ecart_type_longueur = tableau["longueur"].std()
-print(f"L'écart-type des longueurs : {ecart_type_longueur:.3f}")
-print(f"l'ecart type de GC:{average_gc:.3f}%")
+print(f"L'écart-type des longueurs : {ecart_type_longueur:.3f}%")
+print(f"l'ecart type de GC:{average_gc:.3f}")
 
 # la huitiéme question : Sauvegarder le tableau final dans un fichier CSV 
 # Afficher le résultat 
 
 print("************* 8/Sauvegarde du tableau *************\n")
 tableau.to_csv("tableau_final.csv", index=False)
+
 
 
 
