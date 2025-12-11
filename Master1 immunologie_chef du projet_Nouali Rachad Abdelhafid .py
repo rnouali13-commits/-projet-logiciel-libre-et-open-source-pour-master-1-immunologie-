@@ -20,7 +20,7 @@ tableau= pd.DataFrame(data)
 print(" ***************création et affichage***************")
 
 # Affichage du tableau 
-print("Tableau des séquences ADN :" )
+print("1\***tableau des séquences et langueur et poucentage GC ADN***:" )
 #Afficher le résultat 
 print(tableau, "\n")
 import pandas as pd
@@ -65,13 +65,14 @@ Average_gc = tableau["pourcentage GC"].std()
 # Afficher le resultat
 ecart_type_longueur = tableau["longueur"].std()
 print(f"L'écart-type des longueurs : {ecart_type_longueur:.3f}%")
-print(f"l'ecart type de GC:{average_gc:.3f}")
+print(f"l'ecart type de GC:{average_gc:.3f}%")
 
 # la huitiéme question : Sauvegarder le tableau final dans un fichier CSV 
 # Afficher le résultat 
 
 print("************* 8/Sauvegarde du tableau *************\n")
 tableau.to_csv("tableau_final.csv", index=False)
+
 
 
 
