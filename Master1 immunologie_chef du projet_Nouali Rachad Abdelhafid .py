@@ -61,10 +61,11 @@ print(tableau,"\n")
 
 # la septième question: Calculer l'écart-type du %GC et de la longueur des séquences
 print("7/*l'écart-type et la longueur des séquences *") 
-average_gc = tableau["pourcentage GC"].std()
-# Afficher le resultat
 ecart_type_longueur = tableau["longueur"].std()
 print(f"L'écart-type des longueurs : {ecart_type_longueur:.3f}%")
+average_gc = tableau["pourcentage GC"].std()
+# Afficher le resultat
+
 print(f"l'ecart type de GC:{average_gc:.3f}%")
 
 # la huitiéme question : Sauvegarder le tableau final dans un fichier CSV 
@@ -72,6 +73,7 @@ print(f"l'ecart type de GC:{average_gc:.3f}%")
 
 print("************* 8/Sauvegarde du tableau *************\n")
 tableau.to_csv("tableau_final.csv", index=False)
+
 
 
 
