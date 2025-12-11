@@ -55,7 +55,6 @@ tableau["catégorie GC"]=tableau["pourcentage GC"].apply(lambda x:"Riche" if x >
 print(tableau,"\n")
 
 # la sixiéme question: Ajouter une colonne donnant le nombre de 'G' dans chaque séquence
-tableau = pd.DataFrame(data)
 tableau["Nombre de G"] = tableau ["Séquence"].str.count("G")
 print(tableau,"\n") 
 
@@ -72,6 +71,7 @@ print(f"l'ecart type de GC:{average_gc:.3f}%")
 
 print("************* 8/Sauvegarde du tableau *************\n")
 tableau.to_csv("tableau_final.csv", index=False)
+
 
 
 
