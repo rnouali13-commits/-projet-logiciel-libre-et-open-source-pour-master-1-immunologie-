@@ -49,7 +49,7 @@ print(f"Pourcentage moyen de GC avec 3 chiffres après la virgule :{average_gc:.
 #la cinquième question: Ajouter une colonne de “Catégorie GC”
 print("5/***l'ajout d'une nouvelle colonne de catégorie GC***")
 # Création du DataFrame
-df = pd.DataFrame(tableau)  
+tableau = pd.DataFrame(tableau)  
 tableau["catégorie GC"]=tableau["pourcentage GC"].apply(lambda x:"Riche" if x > 55 else("Moyen" if 45<= x <= 55 else "Faible" ))
 #afficher le résultat
 print(tableau,"\n")
@@ -72,6 +72,7 @@ print(f"l'ecart type de GC:{average_gc:.3f}%")
 
 print("************* 8/Sauvegarde du tableau *************\n")
 tableau.to_csv("tableau_final.csv", index=False)
+
 
 
 
