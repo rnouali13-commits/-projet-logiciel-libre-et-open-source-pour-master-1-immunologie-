@@ -35,7 +35,7 @@ print(Séquence , "\n")
 
 # la troisième question :Filtrer les séquences dont la longueur est supérieure à 10
 tableau= pd.DataFrame(data) 
-print("**************3/Filtrage des séquences dont la longueur est supérieure à 10 **************")
+print("*********3/Filtrage des séquences dont la longueur est supérieure à 10 *********")
 filtered_tableau = tableau[tableau["longueur"]<10 ]   
 #Afficher le résultat 
 print(filtered_tableau,"\n")
@@ -55,12 +55,13 @@ tableau["catégorie GC"]=tableau["pourcentage GC"].apply(lambda x:"Riche" if x >
 print(tableau,"\n")
 
 # la sixiéme question: Ajouter une colonne donnant le nombre de 'G' dans chaque séquence
-tableau["Nombre de G"] = tableau ["Séquence"].str.count("G")
+print("6/*** l'ajout d'une nouvelle colonne contenant le  nombre de G***")
+tableau["nombre de G"]= tableau["Séquence"].str.count("G")
 print(tableau,"\n") 
 
 # la septième question: Calculer l'écart-type du %GC et de la longueur des séquences
 print("7/*l'écart-type et la longueur des séquences *") 
-Average_gc = tableau["pourcentage GC"].std()
+average_gc = tableau["pourcentage GC"].std()
 # Afficher le resultat
 ecart_type_longueur = tableau["longueur"].std()
 print(f"L'écart-type des longueurs : {ecart_type_longueur:.3f}%")
@@ -71,6 +72,7 @@ print(f"l'ecart type de GC:{average_gc:.3f}%")
 
 print("************* 8/Sauvegarde du tableau *************\n")
 tableau.to_csv("tableau_final.csv", index=False)
+
 
 
 
