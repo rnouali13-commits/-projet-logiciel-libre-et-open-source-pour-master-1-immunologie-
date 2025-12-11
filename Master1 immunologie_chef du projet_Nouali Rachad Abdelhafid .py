@@ -20,13 +20,13 @@ tableau= pd.DataFrame(data)
 print(" ***************création et affichage***************")
 
 # Affichage du tableau 
-print("1\***tableau des séquences et langueur et poucentage GC ADN***:" )
+print("1\*** tableau des séquences et longueur  et pourcentage de GC et d'ADN***:" )
 #Afficher le résultat 
 print(tableau, "\n")
 import pandas as pd
 
 # la deuxième question: Affichager la colonne de longueur sur un tableau
-print(" **************2/ tableau de longueur************** ")
+print(" **************2/ tableau de longueur ************** ")
 # Création du DataFrame
 df = pd.DataFrame(tableau)  
 # Affichager uniquement la colonne de longueur sur un tableau
@@ -35,14 +35,14 @@ print(Séquence , "\n")
 
 # la troisième question :Filtrer les séquences dont la longueur est supérieure à 10
 tableau= pd.DataFrame(data) 
-print("**************3/Filtrage les séquences dont la longueur est supérieure à 10 **************")
+print("**************3/Filtrage des séquences dont la longueur est supérieure à 10 **************")
 filtered_tableau = tableau[tableau["longueur"]<10 ]   
 #Afficher le résultat 
 print(filtered_tableau,"\n")
 
 
-# la Quatrième question : Calculer la moyenne de pourcentage de GC avec 3 chiffres après la virgule 
-print("************* 4/Calcul de la moyen *************","\n")
+# la quatrième question : Calculer la moyenne de pourcentage de GC avec 3 chiffres après la virgule 
+print("************* 4/Calcul de la moyenne *************","\n")
 average_gc = tableau ["pourcentage GC"].mean ()
 print(f"Pourcentage moyen de GC avec 3 chiffres après la virgule :{average_gc:.3f}%","\n")
      
@@ -54,13 +54,13 @@ tableau["catégorie GC"]=tableau["pourcentage GC"].apply(lambda x:"Riche" if x >
 #afficher le résultat
 print(tableau,"\n")
 
-# la sixiéme question: Ajouter une colonne donnant le nombre de 'G' dans chaque Séquence 
+# la sixiéme question: Ajouter une colonne donnant le nombre de 'G' dans chaque séquence
 tableau = pd.DataFrame(data)
 tableau["Nombre de G"] = tableau ["Séquence"].str.count("G")
 print(tableau,"\n") 
 
 # la septième question: Calculer l'écart-type du %GC et de la longueur des séquences
-print("7/*l'écart-type et la langueur des séquences*") 
+print("7/*l'écart-type et la longueur des séquences *") 
 Average_gc = tableau["pourcentage GC"].std()
 # Afficher le resultat
 ecart_type_longueur = tableau["longueur"].std()
@@ -72,6 +72,7 @@ print(f"l'ecart type de GC:{average_gc:.3f}%")
 
 print("************* 8/Sauvegarde du tableau *************\n")
 tableau.to_csv("tableau_final.csv", index=False)
+
 
 
 
