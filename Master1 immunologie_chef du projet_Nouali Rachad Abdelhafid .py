@@ -20,7 +20,7 @@ tableau= pd.DataFrame(data)
 print(" ***************création et affichage***************")
 
 # Affichage du tableau 
-print("1\*** tableau des séquences et longueur  et pourcentage de GC et d'ADN***:" )
+print("1/*** tableau des séquences et longueur  et pourcentage de GC et d'ADN***:" )
 #Afficher le résultat 
 print(tableau, "\n")
 import pandas as pd
@@ -71,6 +71,7 @@ print(f"l'ecart type de GC:{average_gc:.3f}%")
 
 print("************* 8/Sauvegarde du tableau *************\n")
 tableau.to_csv("tableau_final.csv", index=False)
+
 
 
 
