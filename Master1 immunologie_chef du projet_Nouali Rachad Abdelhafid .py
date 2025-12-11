@@ -42,7 +42,7 @@ print(filtered_tableau,"\n")
 
 
 # la quatrième question : Calculer la moyenne de pourcentage de GC avec 3 chiffres après la virgule 
-print("************* 4/Calcul de la moyenne *************","\n")
+print("************* 4/Calcul de la moyenne *************")
 average_gc = tableau ["pourcentage GC"].mean ()
 print(f"Pourcentage moyen de GC avec 3 chiffres après la virgule :{average_gc:.3f}%","\n")
      
@@ -71,6 +71,7 @@ print(f"l'ecart type de GC:{average_gc:.3f}%")
 
 print("************* 8/Sauvegarde du tableau *************\n")
 tableau.to_csv("tableau_final.csv", index=False)
+
 
 
 
